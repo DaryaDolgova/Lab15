@@ -1,0 +1,25 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+int i,n,j; float s;
+cout<<"N= "; cin>>n;
+int *A;
+float *B;
+A=new int[n];
+B=new float[n];
+for (i=0;i<n;i++) {cin>>A[i];}
+for (i=0; i<n; i++)
+{
+s=0;
+for (j=0; j<=i; j++)
+{s=s+A[j];}
+B[i]=s/(i+1);
+}
+cout<<endl;
+for (i=0; i<n; i++)
+cout<<B[i]<<endl;
+return 0;
+}
