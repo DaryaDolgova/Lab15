@@ -1,0 +1,22 @@
+# Lab15
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+int i,n,z;
+cout<<"N= "; cin>>n;
+int *A=new int [n];
+int *B=new int [n];
+for (i=0;i<n;i++) {cout<<"A= ";cin>>A[i];}
+for (i=0;i<n;i++) {cout<<"B= ";cin>>B[i];}
+for (i=0;i<n;i++) {
+z=A[i];
+A[i]=B[i];
+B[i]=z;
+}
+for (i=0;i<n;i++) {cout<<"A="<<A[i]<<" "<<ends;}
+for (i=0;i<n;i++) {cout<<"B="<<B[i]<<" "<<ends;}
+return 0;
+}
